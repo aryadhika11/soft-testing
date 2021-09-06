@@ -28,18 +28,20 @@ function hitungGajiTotal($gaji, $waktu) {
 
     if($totalPemasukan > $pengeluaran) {
         $sisa = $totalPemasukan - $pengeluaran;
-        echo "$totalPemasukan, bisa menabung. sisa pemasukan : $sisa";
+        echo "Rp.$totalPemasukan, bisa menabung. sisa pemasukan : $sisa";
     }else if ($totalPemasukan < $pengeluaran) {
         $sisa = $totalPemasukan - $pengeluaran;
-        echo "$totalPemasukan, cari tambahan, sisa pemasukan : $sisa";
-    }else if ($totalPemasukan === $pengeluaran) {
+        echo "Rp.$totalPemasukan, cari tambahan, sisa pemasukan : $sisa";
+    }else if ($totalPemasukan == $pengeluaran) {
         $sisa = $totalPemasukan - $pengeluaran;
-        echo "$totalPemasukan, tidak bisa menabung, sisa pemasukan : $sisa";
+        echo "Rp.$totalPemasukan, tidak bisa menabung, sisa pemasukan : $sisa";
     }else {
         echo "Masukkan Input Yang Valid";
     }
 }
 //call a function
+// echo hitungGajiNormal(100);
+// echo hitungGajiLembur(41, 150000);
 echo hitungGajiTotal(15000, 52);
 
 
